@@ -1,15 +1,65 @@
+<!doctype html>
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet" href="css/slate-boostrap.min.css">
-    <link rel="stylesheet" href="css/global.css">
+    <title>Site Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/slate-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/screen.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 </head>
 <body>
+<div class="container">
     <header>
-        <section>
-            <img src="" alt="">
-        </section>
+        <div class="container">
+            <a href="index.html"><h1>A life captured</h1></a>
+            <ul class="navigation">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
     </header>
+
+    <div class="images">
+    <ul>
+        <li>
+            <a href="Carlin.html"><section>
+                <img class="img-responsive spotlight" src="images/kristin/Carlin(12).jpg" alt="">
+                <h2 class="img-title">Carlin</h2>
+            </a>
+        </li>
+
+        <li>
+            <a href="Addison.html">
+                <img class="img-responsive spotlight" src="images/kristin/Addison(11).jpg" alt="">
+                <h2 class="img-title">Addison</h2>
+            </a>
+        </li>
+
+        <li>
+            <a href="Audriana.html">
+                <img class="img-responsive spotlight" src="images/Joey/Audriana(12).jpg" alt="">
+                <h2 class="img-title">Audriana</h2>
+            </a>
+        </li>
+    </ul>
+    </div>
+</div>
+<footer>
+
+</footer>
+<script>
+$(function() {
+  $('.spotlight').mouseover(function() {
+    $(this).siblings('h2').addClass('show');
+  });
+  $('.spotlight').mouseout(function() {
+    $(this).siblings('h2').removeClass('show');
+  });
+});
+</script>
 
 </body>
 </html>
