@@ -12,6 +12,7 @@ h1 {
         color:white;
     }
 }
+
 .navigation {
     position: absolute;
     top:40px;
@@ -32,7 +33,6 @@ header {
         font-size: 20px;
         float:right;
         vertical-align: middle;
-
     }
 }
 
@@ -66,4 +66,48 @@ header {
 
 .show {
     display: block;
+}
+
+.about {
+    p {
+        font-size: 2em;
+        margin-top: 1em;
+        margin: 35px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navigation {
+        top: 37px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .navigation li {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .about p {
+        font-size: 1.5em;
+    }
+    .navigation {
+        top: 35px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .navigation li {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    .about p {
+        font-size: 1.2em;
+    }
+    .navigation {
+        top: 33px;
+    }
 }

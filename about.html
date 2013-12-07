@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title>Site Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/slate-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/screen.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="container">
+            <a href="index.html"><h1>A life captured</h1></a>
+            <ul class="navigation">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="about">
+       <p>A picture captures a point in time. But, what if you could see a life as it unfolds?  <i>A life captured</i> strives to document physical and personal growth, personality, and identity.
+       </p>
+       <p>Twelve photos -- that's it.  Our goal is to capture life in progress in 12 frames.  Come along for the journey.
+       </p>
+   </div>
+
+</div>
+<footer>
+
+</footer>
+<script>
+$(function() {
+  $('.spotlight').mouseover(function() {
+    $(this).siblings('h2').addClass('show');
+  });
+  $('.spotlight').mouseout(function() {
+    $(this).siblings('h2').removeClass('show');
+  });
+});
+</script>
+
+</body>
+</html>

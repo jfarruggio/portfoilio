@@ -57,3 +57,8 @@ header li {
 .show {
   display: block;
 }
+
+.about p {
+  font-size: 50px;
+  background: blue;
+}
