@@ -64,6 +64,30 @@ header li {
   margin: 35px;
 }
 
+.contact p {
+  margin-left: 30px;
+  font-size: 2em;
+  margin-top: 20px;
+}
+.contact p .email-us {
+  color: green;
+}
+
+.form label {
+  font-weight: normal;
+  font-size: 2em;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+.form input {
+  margin-left: 30px;
+  width: 50%;
+}
+.form .btn {
+  color: green;
+  margin-left: 28px;
+}
+
 @media screen and (max-width: 750px) {
   .navigation {
     top: 37px;
@@ -78,7 +102,7 @@ header li {
     font-size: 30px;
   }
 
-  .about p {
+  .about p, .contact p, .form label {
     font-size: 1.5em;
   }
 
@@ -95,7 +119,7 @@ header li {
     font-size: 22px;
   }
 
-  .about p {
+  .about p, .contact p, .form label {
     font-size: 1.2em;
   }
 

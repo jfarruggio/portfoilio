@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>Site Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/slate-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/screen.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="container">
+            <a href="index.html"><h1>A life captured</h1></a>
+            <ul class="navigation">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contact">
+       <p>Would you like to know more?
+        <a class="email-us" href="mail to:kristin@henikoff.com">Email Us</a>
+       </p>
+    </div>
+
+    <form role="form" class="form">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Want to know about gallery shows or events in your area?  Subscribe to our email list.</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+</div>
+<footer>
+
+</footer>
+<script>
+$(function() {
+  $('.spotlight').mouseover(function() {
+    $(this).siblings('h2').addClass('show');
+  });
+  $('.spotlight').mouseout(function() {
+    $(this).siblings('h2').removeClass('show');
+  });
+});
+</script>
+
+</body>
+</html>
